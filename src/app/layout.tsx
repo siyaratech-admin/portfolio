@@ -11,9 +11,9 @@ const tomorrow = Tomorrow({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe - Developer",
+  title: "Siyaratech Innovations",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "",
 };
 
 export default function RootLayout({
