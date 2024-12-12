@@ -35,7 +35,7 @@ export const Products = () => {
                 alt="thumbnail"
                 height="200"
                 width="200"
-                className="rounded-md"
+                className="w-full md:w-fit rounded-md"
               />
               <div className="flex flex-col justify-between">
                 <div>
