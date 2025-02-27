@@ -11,8 +11,8 @@ import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterk
 
 export const products = [
   {
-    href: "https://www.coursevidhya.siyaratechin.com",
-    title: "CourseVidhya",
+    href: "https://techdivehub.siyaratechin.com",
+    title: "TechDiveHub",
     description:
       "Transforming Learning into an Engaging Journey",
     thumbnail: sidefolioAceternity,
