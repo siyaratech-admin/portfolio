@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <Container>
-                  <BoxesCore className="opacity-50" />
+    <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
+        <BoxesCore className="opacity-50 w-screen h-full" />
 
-      <div className="flex space-x-2 z-50 relative ">
+      <div className="flex space-x-2 z-50 relative max-w-8xl  mx-auto py-20 px-4 md:px-10">
         <span className="text-8xl">⚡</span>
         <Heading className="font-black mb-10">
           {" "}
@@ -26,6 +26,6 @@ export default function Projects() {
         </Heading>
       </div>
       <Products />
-    </Container>
+    </div>
   );
 }

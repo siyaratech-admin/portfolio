@@ -9,10 +9,9 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 
   // Use actual color codes instead of CSS variables
   const colors = [
-    "#FBBF24", // yellow-200 equivalent
-    "#F87171", // red-400 equivalent
-    "#A78BFA", // purple-400 equivalent
-    "#A78BFA", // violet-400 equivalent
+    "#a855f7", 
+    "#eab308", 
+    "#f97316", 
   ]
 
   const getRandomColor = () => {
@@ -25,7 +24,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
         transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
       }}
       className={cn(
-        "absolute z-0 left-1/4 p-4 -top-1/4 flex -translate-x-1/2 -translate-y-1/2 w-full h-full",
+        "absolute z-10 left-1/4 p-4 -top-1/4 flex -translate-x-1/2 -translate-y-1/2 w-full h-full",
         className,
       )}
       {...rest}

@@ -10,8 +10,9 @@ import { motion } from "framer-motion";
 
 export const Products = () => {
   return (
-    <div className="z-10 relative pointer-events-auto">
-      <div className="grid grid-cols-1  gap-10">
+<div className="flex justify-center items-center z-10 relative pointer-events-auto w-full mx-auto px-4 md:px-20">
+  <div className="grid grid-cols-1 gap-10 w-full max-w-7xl">
+
         {products.map((product: Product, idx: number) => (
           <motion.div
             key={product.href}
@@ -28,13 +29,13 @@ export const Products = () => {
             <Link
               href={product.slug ? `/projects/${product.slug}` : product.href}
               key={product.href}
-              className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-800 rounded-2xl transition duration-200 p-4"
+              className="group w-full min-w-8xl flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-800 rounded-2xl transition duration-200 p-4"
             >
               <Image
                 src={product.thumbnail}
                 alt="thumbnail"
-                height="200"
-                width="200"
+                height="300"
+                width="500"
                 className="w-full md:w-fit rounded-md"
                 loading="lazy"
               />
@@ -50,7 +51,7 @@ export const Products = () => {
                     {product.description}
                   </Paragraph>
                 </div>
-                <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                <div className="flex flex-wrap gap-2  md:mb-1 mt-2 md:mt-0">
                   {product.stack?.map((stack: string) => (
                     <span
                       key={stack}

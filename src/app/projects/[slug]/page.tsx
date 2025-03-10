@@ -1,3 +1,4 @@
+import { BoxesCore } from "@/components/background-boxes";
 import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
 import { Highlight } from "@/components/Highlight";
@@ -43,8 +44,9 @@ export default function SingleProjectPage({
     redirect("/projects");
   }
   return (
-    <Container>
+    <div className="relative flex flex-col items-start justify-center overflow-clip ">
+        <BoxesCore className="opacity-50 w-screen h-full" />
       <SingleProduct product={product} />
-    </Container>
+    </div>
   );
 }

@@ -12,7 +12,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
     product.thumbnail
   );
   return (
-    <div className="py-10">
+    <div className="z-20 max-w-5xl mx-auto py-20 px-4 md:px-10">
       <motion.div
         initial={{
           opacity: 0,
