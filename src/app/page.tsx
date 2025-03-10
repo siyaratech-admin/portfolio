@@ -5,9 +5,9 @@ import { Paragraph } from "@/components/Paragraph"
 export default function Home() {
   return (
     <Container>
-      <div className="relative flex flex-col items-start justify-center overflow-y-clip">
+      <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
         <BoxesCore className="opacity-50" />
-        <div className="relative z-10 max-w-3xl h-fit top-[20%] pointer-events-none">
+        <div className="relative z-10  h-fit top-[20%] pointer-events-none p-2">
           <span className="text-8xl mb-4 inline-block">👋</span>
           <h1 className="font-bold text-2xl text-foreground">Welcome to</h1>
           <h1 className="text-6xl font-bold bg-gradient-to-r leading-loose from-purple-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent">

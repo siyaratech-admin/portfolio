@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { SiyaraTechFeatures } from '@/components/SiyaraTechFeatures'
+import { BoxesCore } from '@/components/background-boxes';
+import { Separator } from '@/components/Separator';
 
 const projects = [
   {
@@ -27,12 +29,14 @@ const projects = [
 export default function About() {
   return (
     <section id="about" className="px-4 md:px-16 py-20">
+      <BoxesCore className="opacity-50" />
+
       <div className="flex-col mx-auto space-y-32">
         <header className="mb-12">
           <h1 className="text-4xl font-bold mb-2">About Us</h1>
           <div className="w-20 h-1 bg-red-500"></div>
         </header>
-        
+
         <div className="flex-col space-y-8 md:space-y-16">
           <h3 className="text-2xl font-semibold mb-4 order-first">Our Story</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -51,6 +55,92 @@ export default function About() {
               />
             </div>
           </div>
+          <Separator/>
+          <h3 className="text-2xl font-semibold mb-4">Goverment Certificed</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="h-full order-first md:order-first">
+              <Image
+                src="/images/startup_cert.png"
+                alt="Startup Certification"
+                width={500}
+                height={300}
+                className="rounded-lg z-10 relative"
+              />
+            </div>
+            <div className="w-full h-full order-last md:order-last">
+              <p className="leading-loose">
+                We are proud to announce that <span className="font-semibold">Siyaratech Innovations LLP</span> has been officially recognized as a <span className="font-semibold">Startup by the Government of India</span>, under the <span className="font-semibold">Ministry of Commerce & Industry, Department for Promotion of Industry and Internal Trade (DPIIT)</span>.
+              </p>
+              <ul className="p-2 list-disc">
+                <li><span className="font-semibold">Entity Name:</span> Siyaratech Innovations LLP</li>
+                <li><span className="font-semibold">Incorporation Date:</span> 16th August 2024</li>
+                <li><span className="font-semibold">Recognized By:</span> Department for Promotion of Industry and Internal Trade (DPIIT)</li>
+                <li><span className="font-semibold">Industry:</span> Artificial Intelligence (AI)</li>
+                <li><span className="font-semibold">Sector:</span> Machine Learning</li>
+                <li><span className="font-semibold">Validity:</span> Up to 10 years from incorporation, subject to turnover not exceeding ₹100 Cr in any financial year</li>
+              </ul>
+              <p className="leading-loose">
+                This recognition underscores our commitment to innovation in <span className="font-semibold">AI and Machine Learning</span>, driving technological advancements and contributing to the digital transformation landscape.
+              </p>
+            </div>
+          </div>
+
+          {/* ------------------------------------------------------------------------------------------------ */}
+          <Separator/>
+
+
+          <h3 className="text-2xl font-semibold mb-4">Professional Certifications</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <div className="w-full h-full order-first md:order-last">
+              <p className="leading-loose">
+                <span className="font-semibold">Project Management Professional (PMP)®</span> certification issued by the <span className="font-semibold">Project Management Institute</span> to <span className="font-semibold">Rohit Sonawale</span>.
+              </p>
+              <ul className="p-2 list-disc">
+                <li><span className="font-semibold">Issued:</span> September 2024</li>
+                <li><span className="font-semibold">Expires:</span> September 2027</li>
+              </ul>
+            </div>
+            <div className="flex h-full w-full justify-center md:order-last">
+              <Image
+                src="/images/pmp.png"
+                alt="Project Management Professional (PMP)®"
+                width={300}
+                height={300}
+                className="rounded-lg z-10 relative"
+              />
+            </div>
+          </div>
+      
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <div className="w-full h-full order-first md:order-last">
+              <p className="leading-loose">
+                <span className="font-semibold">AWS Certified Solutions Architect</span> certification issued by <span className="font-semibold">Amazon Web Services (AWS)</span>.
+              </p>
+              <ul className="p-2 list-disc">
+                <li><span className="font-semibold">Issued:</span> July 2024</li>
+                <li><span className="font-semibold">Expires:</span> July 2027</li>
+                <li><span className="font-semibold">Credential ID:</span> 2249e8defeb44850aba601b8e60d6108</li>
+              </ul>
+            </div>
+            <div className="h-full md:order-last">
+              <Image
+                src="/images/aws.png"
+                alt="AWS Certified Solutions Architect"
+                width={500}
+                height={300}
+                className="rounded-lg z-10 relative"
+              />
+            </div>
+          </div>
+
+
+
+
+
+          {/* ------------------------------------------------------------------------------------------------ */}
+          <Separator/>
 
           <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -76,6 +166,7 @@ export default function About() {
               </p>
             </div>
           </div>
+          <Separator/>
 
           <h3 className="text-2xl font-semibold mb-4">Our Team</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -111,6 +202,7 @@ export default function About() {
             </p>
           </div>
         </div>
+        <Separator/>
 
         <div className="flex-col space-y-4 mt-16">
           <div>

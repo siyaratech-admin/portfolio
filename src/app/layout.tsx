@@ -27,8 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={twMerge(tomorrow.className, "antialiased min-h-screen bg-background text-foreground")}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
-          <div className="flex flex-col min-h-screen">
+        <ThemeProvider attribute="class" defaultTheme="dark" >
+          <div className="flex flex-col min-h-screen max-w-screen p-2">
 
             <FloatingNav navItems={navigationItems} className="z-50" />
             <main className="flex-1 h-fit">{children}</main>
