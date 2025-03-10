@@ -25,10 +25,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark ">
       <body className={twMerge(tomorrow.className, "antialiased min-h-screen bg-background text-foreground")}>
-        <ThemeProvider attribute="class" defaultTheme="dark" >
-          <div className="flex flex-col min-h-screen p-2">
+        <ThemeProvider attribute="class"  >
+          <div className="flex flex-col min-h-screen p-2 bg-black">
           {/* <BoxesCore className="opacity-50 "  /> */}
 
             <FloatingNav navItems={navigationItems} className="z-50" />
