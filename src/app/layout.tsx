@@ -1,42 +1,42 @@
-import { Sidebar } from "@/components/Sidebar";
-import "./globals.css";
-import type { Metadata } from "next";
-import { Tomorrow } from "next/font/google";
-import { twMerge } from "tailwind-merge";
-import { Footer } from "@/components/Footer";
+import type React from "react"
+import "./globals.css"
+import type { Metadata } from "next"
+import { Tomorrow } from "next/font/google"
+import { twMerge } from "tailwind-merge"
+import { Footer } from "@/components/Footer"
+import { ThemeProvider } from "@/components/theme-provider"
+import { FloatingNav } from "@/components/floating-navbar"
+import { navigationItems } from "@/constants/navlinks"
+import { BoxesCore } from "@/components/background-boxes"
 
 const tomorrow = Tomorrow({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+})
 
 export const metadata: Metadata = {
   title: "Siyaratech Innovations",
-  description:
-    "",
-};
+  description: "Pioneering Tomorrow's Solutions Today",
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body
-        className={twMerge(
-          tomorrow.className,
-          "flex antialiased h-screen overflow-hidden bg-gray-100"
-        )}
-      >
-        <Sidebar />
-        <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
-          <div className="flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
-            {children}
+    <html lang="en" className="dark">
+      <body className={twMerge(tomorrow.className, "antialiased min-h-screen bg-background text-foreground")}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+          <div className="flex flex-col min-h-screen">
+
+            <FloatingNav navItems={navigationItems} className="z-50" />
+            <main className="flex-1 h-fit">{children}</main>
             <Footer />
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
+

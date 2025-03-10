@@ -1,30 +1,35 @@
 import {
   IconArticle,
   IconBolt,
+  IconBriefcase,
   IconBriefcase2,
+  IconFileText,
+  IconHome,
   IconMail,
   IconMessage2,
+  IconUser,
 } from "@tabler/icons-react";
 
-export const navlinks = [
+export const navigationItems = [
   {
-    href: "/",
-    label: "Home",
-    icon: IconBolt,
+    name: "Home",
+    link: "/",
+    icon: <IconHome className="h-4 w-4" />,
   },
   {
-    href: "/about",
-    label: "About",
-    icon: IconMessage2,
+    name: "Projects",
+    link: "/projects",
+    icon: <IconBriefcase className="h-4 w-4" />,
   },
   {
-    href: "/projects",
-    label: "Projects",
-    icon: IconBriefcase2,
+    name: "About",
+    link: "/about",
+    icon: <IconUser className="h-4 w-4" />,
   },
   {
-    href: "https://siyaratechin.com/#contact",
-    label: "Contact",
-    icon: IconMail,
+    name: "Contact",
+    link: "https://siyaratechin.com/#contact",
+    icon: <IconMail className="h-4 w-4" />,
   },
-];
+]
+

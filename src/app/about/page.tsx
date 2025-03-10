@@ -47,7 +47,7 @@ export default function About() {
                 alt="Our Story"
                 width={500}
                 height={300}
-                className="rounded-lg"
+                className="rounded-lg  z-10 relative"
               />
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function About() {
                 alt="Our Mission"
                 width={500}
                 height={300}
-                className="rounded-lg"
+                className="rounded-lg  z-10 relative"
               />
             </div>
             <div className="w-full h-full order-last md:order-last">
@@ -96,7 +96,7 @@ export default function About() {
                 alt="Our Team"
                 width={500}
                 height={300}
-                className="rounded-lg"
+                className="rounded-lg  z-10 relative"
               />
             </div>
           </div>
