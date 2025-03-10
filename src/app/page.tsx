@@ -1,6 +1,8 @@
 import { BoxesCore } from "@/components/background-boxes"
 import { Container } from "@/components/Container"
 import { Paragraph } from "@/components/Paragraph"
+import Projects from "./projects/page"
+import About from "./about/page"
 
 export default function Home() {
   return (
@@ -30,6 +32,9 @@ export default function Home() {
             our team of dedicated innovators is committed to turning visionary ideas into reality, one breakthrough at a
             time.
           </Paragraph>
+          <Projects/>
+          <About/>
+        
         </div>
       </div>
     </div>
