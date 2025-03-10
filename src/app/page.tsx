@@ -14,7 +14,7 @@ export default function Home() {
           <div className="w-full flex-col items-start">
           <h1 className="font-bold text-3xl text-foreground item-start">Welcome to</h1>
           <h1 className="text-transparent text-3xl md:text-6xl w-full md:w-fit uppercase font-bold  leading-loose tracking-wider bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCB045] bg-clip-text mt-2">
-            Siyaratech Innovation
+            Siyaratech Innovations
           </h1>
           <h1 className="font-normal text-3xl md:text-6xl py-2 text-foreground item-left"> Works</h1>
           <Paragraph className=" font-medium mt-4 items-start text-left">Pioneering Tomorrow&apos;s Solutions Today</Paragraph>
