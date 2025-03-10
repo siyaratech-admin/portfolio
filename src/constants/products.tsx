@@ -24,7 +24,7 @@ export const products = [
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
     stack: ["Nextjs", "Tailwindcss"],
-    slug: "aceternity",
+    slug: "techdiveshub",
     content: (
       <div>
         <p>
@@ -69,11 +69,11 @@ export const products = [
     href: "https://collabease-nine.vercel.app/",
     title: "CollabEase",
     description:
-      "Tech blogs",
+      "Task Management Application",
     thumbnail: collabease1,
     images: [collabease1, collabease2],
     stack: ["React", "NodeJS", "Tailwindcss"],
-    slug: "byteblog",
+    slug: "collabease",
     content: (
       <div>
         <p>
@@ -89,7 +89,7 @@ export const products = [
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
     stack: ["React", "Tailwindcss", "Express"],
-    slug: "algochurn",
+    slug: "eccomercedashboard",
     content: (
       <div>
         <p>
@@ -107,7 +107,7 @@ export const products = [
     thumbnail: sidefolioMoonbeam2,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
     stack: ["Nextjs", "Tailwindcss"],
-    slug: "moonbeam",
+    slug: "interviewai",
     content: (
       <div>
         <p>
@@ -124,7 +124,7 @@ export const products = [
     thumbnail: sidefolioTailwindMasterKit,
     images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
     stack: ["Nextjs", "Tailwindcss"],
-    slug: "tailwindmasterkit",
+    slug: "sketchwhiteboard",
     content: (
       <div>
         <p>
