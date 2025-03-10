@@ -61,7 +61,7 @@ export const products = [
     content: (
       <div>
         <p>
-          ByteBlog is a modern blogging platform designed to facilitate the sharing of stories and creative ideas. It offers a user-friendly interface that allows users to explore various categories, such as "Tech News," and discover new content effortlessly. The platform's clean design and intuitive navigation enhance the reading experience, making it easy for users to engage with diverse topics.      </p>
+          ByteBlog is a modern blogging platform designed to facilitate the sharing of stories and creative ideas. It offers a user-friendly interface that allows users to explore various categories, such as &quot;Tech News,&quot; and discover new content effortlessly. The platform&#39;s clean design and intuitive navigation enhance the reading experience, making it easy for users to engage with diverse topics.      </p>
       </div>
     ),
   },
