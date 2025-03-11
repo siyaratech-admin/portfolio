@@ -34,7 +34,7 @@ export default function RootLayout({
           <BoxesCore className="opacity-50 w-full h-full z-20" />
             <FloatingNav navItems={navigationItems} className="z-50" />
             <main className="flex-1 h-fit w-full">{children}</main>
-            <Footer />
+            <Footer  />
           </div>
           </div>
         </ThemeProvider>
