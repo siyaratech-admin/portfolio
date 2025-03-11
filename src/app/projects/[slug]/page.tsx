@@ -44,7 +44,7 @@ export default function SingleProjectPage({
     redirect("/projects");
   }
   return (
-    <div className="relative flex flex-col items-start justify-center overflow-clip ">
+    <div className="relative flex flex-col items-start justify-center overflow-clip w-full ">
         {/* <BoxesCore className="opacity-50 w-screen h-full" /> */}
       <SingleProduct product={product} />
     </div>
