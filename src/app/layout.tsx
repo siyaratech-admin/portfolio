@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { FloatingNav } from "@/components/floating-navbar"
 import { navigationItems } from "@/constants/navlinks"
+import { BackgroundBeamsWithCollision } from "@/components/background-beams-with-collision"
 
 const tomorrow = Tomorrow({
   subsets: ["latin"],
@@ -29,8 +30,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <div className="flex flex-col min-h-screen p-2 bg-black">
             <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
+              <BackgroundBeamsWithCollision >
               <FloatingNav navItems={navigationItems} className="z-50" />
               <main className="flex-1 h-fit w-full">{children}</main>
+              </BackgroundBeamsWithCollision >
               <Footer />
             </div>
           </div>

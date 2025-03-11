@@ -14,7 +14,7 @@ export const LazyBackground: React.FC<{ className?: string }> = ({ className }) 
   if (!shouldRender) {
     return (
       <div
-        className={`absolute -left-1/2 p-4 top-0 w-full h-full z-0 opacity-50 bg-gradient-to-r text-white ${className}`}
+        className={`absolute -left-1/2 p-4 top-0 w-full h-full z-0 opacity-50  text-white ${className}`}
       />
     )
   }

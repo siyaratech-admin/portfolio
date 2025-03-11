@@ -1,12 +1,14 @@
 import { Paragraph } from "@/components/Paragraph"
 import Projects from "./projects/page"
 import { LazyBackground } from "@/components/lazy-background"
+import { Spotlight } from "@/components/Spotlight"
 
 export default function Home() {
   return (
     <div className="bg-black">
+      <Spotlight />
       <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
-        <LazyBackground className="opacity-50 w-full h-full z-20" />
+        {/* <LazyBackground className="opacity-50 w-full h-full z-20" /> */}
         <div className="flex flex-col items-start w-full md:px-40 py-20 px-4 relative z-30 h-fit top-[20%] pointer-events-none justify-center">
           <span className="text-8xl mb-4 inline-block items-start z-50">👋</span>
           <div className="w-full flex-col items-start">
