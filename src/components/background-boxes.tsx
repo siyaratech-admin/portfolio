@@ -1,31 +1,42 @@
 "use client"
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
-  const rows = new Array(70).fill(1)
-  const cols = new Array(60).fill(1)
+  const [renderedRows, setRenderedRows] = useState(10)
+  const [renderedCols, setRenderedCols] = useState(10)
+  const totalRows = 70
+  const totalCols = 60
 
-  // Use actual color codes instead of CSS variables
   const colors = ["#a855f7", "#eab308", "#f97316"]
 
   const getRandomColor = () => {
     return colors[Math.floor(Math.random() * colors.length)]
   }
 
+  useEffect(() => {
+    const incrementRender = () => {
+      setRenderedRows(prev => Math.min(prev + 10, totalRows))
+      setRenderedCols(prev => Math.min(prev + 10, totalCols))
+    }
+
+    const interval = setInterval(incrementRender, 100)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
-    
     <div
       style={{
         transform: `translate(-30%,-40%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
       }}
-      className={cn("absolute -left-1/2 p-4 top-0 flex  -translate-x-1/2 -translate-y-1/2 w-full h-full z-0 ", className)}
+      className={cn("absolute -left-1/2 p-4 top-0 flex -translate-x-1/2 -translate-y-1/2 w-full h-full z-0", className)}
       {...rest}
     >
-      {rows.map((_, i) => (
+      {Array(renderedRows).fill(1).map((_, i) => (
         <motion.div key={`row` + i} className="w-16 h-8 border-border relative">
-          {cols.map((_, j) => (
+          {Array(renderedCols).fill(1).map((_, j) => (
             <motion.div
               whileHover={{
                 backgroundColor: getRandomColor(),
@@ -58,4 +69,3 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 }
 
 export const Boxes = React.memo(BoxesCore)
-
