@@ -29,7 +29,7 @@ const projects = [
 export default function About() {
   return (
     <section id="about" className="px-4 md:px-16 py-20">
-      <BoxesCore className="opacity-50" />
+      {/* <BoxesCore className="opacity-50" /> */}
 
       <div className="flex-col mx-auto space-y-32">
         <header className="mb-12">

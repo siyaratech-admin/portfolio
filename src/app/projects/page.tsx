@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
-        <BoxesCore className="opacity-50 w-screen h-full" />
+        {/* <BoxesCore className="opacity-50 w-screen h-full z-10" /> */}
 
       <div className="flex space-x-2 z-50 relative max-w-8xl  mx-auto py-20 px-4 md:px-10">
         <span className="text-8xl">⚡</span>

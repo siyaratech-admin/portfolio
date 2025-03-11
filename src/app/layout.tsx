@@ -30,10 +30,12 @@ export default function RootLayout({
         <ThemeProvider attribute="class"  >
           <div className="flex flex-col min-h-screen p-2 bg-black">
           {/* <BoxesCore className="opacity-50 "  /> */}
-
+          <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
+          <BoxesCore className="opacity-50 w-full h-full z-20" />
             <FloatingNav navItems={navigationItems} className="z-50" />
             <main className="flex-1 h-fit">{children}</main>
             <Footer />
+          </div>
           </div>
         </ThemeProvider>
       </body>

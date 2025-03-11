@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="bg-black">
       <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
-        <BoxesCore className="opacity-50 w-screen h-full" />
+        {/* <BoxesCore className="opacity-50 w-screen h-full" /> */}
         <div className="flex flex-col  items-start w-full  md:px-40 py-20 px-4  relative z-10  h-fit top-[20%] pointer-events-none justify-center">
           <span className="text-8xl mb-4 inline-block items-start">👋</span>
           <div className="w-full flex-col items-start">
