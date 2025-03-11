@@ -33,7 +33,7 @@ export default function RootLayout({
           <div className="relative flex flex-col items-start justify-center overflow-clip w-full">
           <BoxesCore className="opacity-50 w-full h-full z-20" />
             <FloatingNav navItems={navigationItems} className="z-50" />
-            <main className="flex-1 h-fit">{children}</main>
+            <main className="flex-1 h-fit w-full">{children}</main>
             <Footer />
           </div>
           </div>
