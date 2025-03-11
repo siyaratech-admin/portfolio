@@ -45,7 +45,7 @@ export default function SingleProjectPage({
   }
   return (
     <div className="relative flex flex-col items-start justify-center overflow-clip ">
-        <BoxesCore className="opacity-50 w-screen h-full" />
+        {/* <BoxesCore className="opacity-50 w-screen h-full" /> */}
       <SingleProduct product={product} />
     </div>
   );
