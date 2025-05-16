@@ -12,7 +12,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
     product.thumbnail
   );
   return (
-    <div className="z-20 max-w-5xl mx-auto py-20 px-4 md:px-10">
+    <div className="z-20 max-w-5xl mx-auto py-20 px-4 justify-center items-center md:px-10 ">
       <motion.div
         initial={{
           opacity: 0,
@@ -28,16 +28,18 @@ export const SingleProduct = ({ product }: { product: Product }) => {
         key={product.slug}
         className="relative"
       >
+        <div className="flex w-full h-[800px] items-top">
         <Image
           src={activeImage}
           alt="thumbnail"
-          height="1000"
-          width="1000"
-          className="rounded-md object-contain"
+          height={800}
+          width={1000}
+          className="rounded-md object-none"
         />
+        </div>
         <div className="absolute bottom-0 bg-gray-200 h-32 w-full [mask-image:linear-gradient(to_bottom,transparent,white)]" />
       </motion.div>
-      <div className="flex flex-row justify-center my-8 flex-wrap">
+      <div className="flex flex-row justify-center my-8 ">
         {product.images.map((image, idx) => (
           <button
             onClick={() => setActiveImage(image)}
