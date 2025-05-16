@@ -14,8 +14,35 @@ import sidefolioMoonbeam from "public/images/sidefolio-moonbeam.png";
 import sidefolioMoonbeam2 from "public/images/sidefolio-moonbeam-2.png";
 import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
 import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
+import IS_Admin_Dashboard from "public/images/IS_Admin_Dashboard.png";
+import IS_Homepage from "public/images/IS_Homepage.png"
 
 export const products = [
+  {
+    href: "https://siyaratechin.com/case-studies/influencer-driven-ecommerce-platform",
+    title: "Influencer Driven Ecommerce Platform",
+    description:
+      "Transform traditional online shopping into a social-first discovery experience powered by influencers.",
+    thumbnail: IS_Admin_Dashboard,
+    images: [IS_Homepage, IS_Admin_Dashboard],
+    stack: ["React", "Java Springboot", "Firebase"],
+    slug: "influencer",
+    content: (
+      <div className="flex-col space-y-4">
+        <video
+          src="/videos/Admin_Video.mp4"
+          controls
+          autoPlay
+          loop
+          muted
+          className="w-full rounded-lg shadow-lg "
+        />
+        <p>
+          <span className="bg-black text-black">---*-*-*-*---</span> [Hidden due to confidentiality] is a next-generation social commerce platform that empowers influencers to become digital entrepreneurs by seamlessly blending authentic content with powerful storefronts. Designed to revolutionize how creators connect with audiences and monetize their reach, the platform transforms traditional shopping into a dynamic, trust-driven experience. With personalized profiles, curated product collections, and transparent earnings, InfluenceSphere enables creators to build mini-brands while offering followers a more engaging, socially-inspired way to shop and discover trends.        </p>
+
+      </div>
+    ),
+  },
   {
     href: "https://techdivehub.siyaratechin.com",
     title: "TechDiveHub",
