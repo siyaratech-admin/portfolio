@@ -13,6 +13,8 @@ export const SingleProduct = ({ product }: { product: Product }) => {
   );
   return (
     <div className="z-20 max-w-5xl mx-auto py-20 px-4 justify-center items-center md:px-10 ">
+              <Heading className="font-black mb-2 pb-1"> {product.title}</Heading>
+
       <motion.div
         initial={{
           opacity: 0,
@@ -57,7 +59,6 @@ export const SingleProduct = ({ product }: { product: Product }) => {
         ))}
       </div>
       <div className="flex lg:flex-row justify-between items-center flex-col mt-20">
-        <Heading className="font-black mb-2 pb-1"> {product.title}</Heading>
         <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
           {product.stack?.map((stack: string) => (
             <span
