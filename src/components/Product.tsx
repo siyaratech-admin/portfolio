@@ -28,16 +28,17 @@ export const SingleProduct = ({ product }: { product: Product }) => {
         key={product.slug}
         className="relative"
       >
-        <div className="flex w-full h-[800px] items-top">
-        <Image
-          src={activeImage}
-          alt="thumbnail"
-          height={800}
-          width={1000}
-          className="rounded-md object-none"
-        />
+        <div className="relative w-full aspect-[5/4] rounded-md overflow-hidden">
+          <Image
+            src={activeImage}
+            alt="thumbnail"
+            fill
+            className="object-contain rounded-md"
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority
+          />
+          {/* <div className="absolute bottom-0 left-0 w-full h-32 bg-gray-200 [mask-image:linear-gradient(to_bottom,transparent,white)] pointer-events-none" /> */}
         </div>
-        <div className="absolute bottom-0 bg-gray-200 h-32 w-full [mask-image:linear-gradient(to_bottom,transparent,white)]" />
       </motion.div>
       <div className="flex flex-row justify-center my-8 ">
         {product.images.map((image, idx) => (
